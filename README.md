@@ -25,8 +25,8 @@ The environments for training and testing are **NVIDIA RTX 3080 GPU**, Intel i9-
 ## Computational Time Analysis of Each Module in Our Model.
 
 
-|Module|  Time (ms)              |
-|----------------|----------|-----------|----------|---------------|--------------|
+|Module|  Time (ms)         |
+|----------------|----------|
 |Feature Extraction     |10|  
 |Cost Volume Construction|7|       
 |Cost Aggregation (None)|4| 
