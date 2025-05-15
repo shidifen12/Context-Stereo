@@ -10,6 +10,34 @@ The environments for training and testing are **NVIDIA RTX 3080 GPU**, Intel i9-
 
 **[link](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19fafc7a0b041ccf935def0c20161f5446976e5f)**
 
+## Performance of ECF and AGS as a replacement for contextual modules in existing networks.
+
+
+
+|Method           |Scene Flow EPE (px) |KITTI 2015 D-1-all (%)          | Middburry (Zero-shot)     |ETH3D (Zero-shot)  |  Time (ms)              |
+|----------------|----------|-----------|----------|---------------|--------------|
+|RT-IGEV++      |0.50| 1.79|9.02  |5.66            |71.5
+|RT-IGEV++ (ECF&AGS) |0.44 |1.72  |8.92  |3.91   |76.1       
+|CGI-Stereo    |0.64|1.94 |13.5  |6.3   |28 
+|CGI-Stereo (ECF&AGS)|0.61|1.92  |  |   |30 
+
+
+## Computational Time Analysis of Each Module in Our Model.
+
+
+|Module|  Time (ms)              |
+|----------------|----------|-----------|----------|---------------|--------------|
+|Feature Extraction     |10|  
+|Cost Volume Construction|7|       
+|Cost Aggregation (None)|4| 
+|Cost Aggregation (ECF)|7| 
+|Cost Aggregation (AGS)|7| 
+|Cost Aggregation (ECF&AGS)|10| 
+|Disparity Regression|3| 
+|Full Module|30| 
+
+
+
 ## Rename a file
 
 You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
@@ -87,15 +115,8 @@ StackEdit extends the standard Markdown syntax by adding extra **Markdown extens
 > **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
 
 
-## SmartyPants
 
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 
 
 ## KaTeX
