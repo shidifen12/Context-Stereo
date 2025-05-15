@@ -10,19 +10,6 @@ The environments for training and testing are **NVIDIA RTX 3080 GPU**, Intel i9-
 
 **[link](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19fafc7a0b041ccf935def0c20161f5446976e5f)**
 
-## Performance of ECF and AGS in existing networks on Scene Flow, KITTI 2015 benchmark, Middlebury and ETH3D.
-
-
-
-|Method           |Scene Flow EPE (px) |KITTI 2015 D-1-all (%)          | Middburry (Zero-shot)     |ETH3D (Zero-shot)  |  Time (ms)              |
-|----------------|----------|-----------|----------|---------------|--------------|
-|RT-IGEV++      |0.50| 1.79|9.02  |5.66            |71.5
-|RT-IGEV++ (ECF&AGS) |0.44 |1.72  |8.92  |3.91   |76.1       
-|CGI-Stereo    |0.64|1.94 |13.5  |6.3   |28 
-|CGI-Stereo (ECF&AGS)|0.61|1.92  |  |   |30 
-
-
-## Computational Time Analysis of Each Module in Our Model.
 
 
 |Module|  Time (ms)         |
