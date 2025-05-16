@@ -25,8 +25,7 @@ Pretraining on Scene Flow costs 11.2h, finetuning on KITTI costs 2.6h.
 |CoEx (ECF&AGS)|0.60|1.93 |12.5  |7.1   |28 
 |CGI-Stereo (CGF)   |0.64|1.94 |13.5  |6.3   |28 
 |CGI-Stereo (ECF&AGS)|0.58|1.90  |10.5 |5.9   |30 
-|Fast-ACV   |0.64|2.17 |20.3  |10.1  |39 
-|Fast-ACV (ECF&AGS)|0.60|2.05  | |   |30 
+
 
 We validate the flexibility of the proposed ECF and AGS in four recent SOTA real-time models, the fast verson of IGEV++, CoEx, CGI-Stereo, and Fast-ACVNet. Existing context guidance in the above models are replaced by ECF&AGS.
 All models were pretrained on Scene Flow and fine-tuned on KITTI. Zero-shot generalization performance was evaluated using the pretrained models. 
