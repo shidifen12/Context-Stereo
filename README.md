@@ -21,8 +21,8 @@ Pretraining on Scene Flow costs 11.2 h, finetuning on KITTI costs 2.6 h.
 
 |Method           |Scene Flow EPE (px) |KITTI 2015 D1-all (%)          | Middebury (Zero-shot)     |ETH3D (Zero-shot)  |  Time (ms)              |
 |----------------|----------|-----------|----------|---------------|--------------|
-|RT-IGEV++      |0.50| 1.79|9.02  |5.66            |72
-|RT-IGEV++ (ECF&AGS) |0.44 |1.72  |8.92  |3.91   |76 
+|RT-IGEV++      |0.50| 1.79|9.0  |5.7            |72
+|RT-IGEV++ (ECF&AGS) |0.44 |1.72  |8.9  |3.9   |76 
 |CoEx (GCE)    |0.69|2.01 |14.5  |9.0   |22 
 |CoEx (ECF&AGS)|0.60|1.93 |12.5  |7.1   |28 
 |CGI-Stereo (CGF)   |0.64|1.94 |13.5  |6.3   |28 
