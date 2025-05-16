@@ -6,6 +6,15 @@
 
 The environments for training and testing are **NVIDIA RTX 3080 GPU**, Intel i9-12900k (12th gen), 32 GB memory, Ubuntu 22.04 LTS, Python 3.8, PyTorch 2.0.0, CUDA 11.8.
 
+
+
+
+## Comparisons with real time methods on real-world data 
+
+![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/hp2.png)
+
+The generalization performance of proposed network and 4 typical SOTA networks of Fast-ACVNet, CGI-Stereo, IINet  and Coex  are tested using stereo image  pairs captured on real-world roads. The image pairs of the real-world roads are captured in Guangzhou City by a binocular camera with focal length of 6 mm and baseline distance of 600 mm. The resolution of the image pairs captured is 1168×320. An ordinary road in Huangpu District is selected as test scenes. In the area where the road locates, two autonomous driving companies of Apollo and WeRide test and run their Robotaxi service.  The binocular camera is calibrated using OpenCV library and its output image pairs are corrected by the distortion parameters obtained from the calibration and the camera’s parameters. The overall disparity map of the proposed network has accurate distance and proximity relationships, where the predicted vehicles, sidewalks, and trees are with fine contours and continuous details. Compared with the SOTA networks, the object contours obtained by the prediction of the proposed network are more finely and distinguishable, especially for the sky and dense clumps of trees. The accurate disparity prediction of real-world roads by the proposed network facilitates robust 3D perception for autonomous driving.
+
 ## KITTI 2015 benchmark
 
 **[link](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19fafc7a0b041ccf935def0c20161f5446976e5f)**
@@ -25,12 +34,3 @@ The environments for training and testing are **NVIDIA RTX 3080 GPU**, Intel i9-
 |Cost Aggregation (ECF&AGS)|10| 
 |Disparity Regression|3| 
 |Full Module|30| 
-
-
-
-## Comparisons with real time methods on real-world data 
-
-![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/hp2.png)
-<![endif]-->
-
-The generalization performance of proposed network and 4 typical SOTA networks of Fast-ACVNet, CGI-Stereo, IINet  and Coex  are tested using stereo image  pairs captured on real-world roads. The image pairs of the real-world roads are captured in Guangzhou City by a binocular camera with focal length of 6 mm and baseline distance of 600 mm. The resolution of the image pairs captured is 1168×320. An ordinary road in Huangpu District is selected as test scenes. In the area where the road locates, two autonomous driving companies of Apollo and WeRide test and run their Robotaxi service.  The binocular camera is calibrated using OpenCV library and its output image pairs are corrected by the distortion parameters obtained from the calibration and the camera’s parameters. The overall disparity map of the proposed network has accurate distance and proximity relationships, where the predicted vehicles, sidewalks, and trees are with fine contours and continuous details. Compared with the SOTA networks, the object contours obtained by the prediction of the proposed network are more finely and distinguishable, especially for the sky and dense clumps of trees. The accurate disparity prediction of real-world roads by the proposed network facilitates robust 3D perception for autonomous driving.
