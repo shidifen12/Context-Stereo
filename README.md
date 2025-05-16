@@ -15,7 +15,7 @@ Pretraining on Scene Flow costs 11.2 h, finetuning on KITTI costs 2.6 h.
 
 **[link](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19fafc7a0b041ccf935def0c20161f5446976e5f)** Rank #154.
 
-## Table 1. Performance of ECF and AGS in existing networks on Scene Flow, KITTI 2015 benchmark, Middlebury and ETH3D.
+## Table 1. Performance of ECF and AGS in methods on Scene Flow, KITTI 2015 benchmark, Middlebury and ETH3D.
 
 
 
