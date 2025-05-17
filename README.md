@@ -65,6 +65,6 @@ The generalization performance of Context-Stereo is evaluated using home-made re
 
 The binocular camera is calibrated using OpenCV library and its output image pairs are corrected by the distortion parameters obtained from the calibration and the camera’s parameters. 
 
-Four typical SOTA real-time methods, CoEx, Fast-ACV, CGI-Stere, IINet are compared with Context-Stereo in the above qualititive results.
+Four typical SOTA real-time methods, CoEx, Fast-ACVNet, CGI-Stereo, IINet are compared with Context-Stereo in the above qualititive results.
 
  
