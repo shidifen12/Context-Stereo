@@ -127,8 +127,9 @@ The KITTI dataset used in this project is a mix of **KITTI 2012** and **KITTI 20
 ## 🎯 Weights 
 
 
-* [Scene Flow](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
-* [KITTI](https://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo)
+* [Scene Flow](https://huggingface.co/shidifen12/Context-Stereo/tree/main/)
+* [KITTI](https://huggingface.co/shidifen12/Context-Stereo/tree/main/)
+
 
 
 
