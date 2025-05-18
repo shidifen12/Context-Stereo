@@ -96,7 +96,8 @@ pip install open3d==0.19.0
 ## 📂 Dataset 
 * [Scene Flow](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
 * [KITTI](https://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo)
-
+* [ETH3D](https://www.eth3d.net/datasets)
+* [Middlebury](https://vision.middlebury.edu/stereo/submit3/)
 Organize the dataset in the following structure:
 
 ```
