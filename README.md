@@ -55,6 +55,9 @@ Timing tests are using the code in **speed.py**, CUDA synchronization included.
 |Disparity Regression|3| 
 |Full Module|30| 
 
+## 🥇 Table 3. Comparison of real-time methods on KITTI benchmarks.
+
+![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/t3.png)
 
 ## 🌍 Comparisons with real time methods on real-world data 
 
