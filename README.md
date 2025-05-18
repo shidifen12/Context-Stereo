@@ -10,6 +10,8 @@ All experiments in the paper including comparisons, ablation experiments in Tabl
 
 Pretraining on Scene Flow costs 11.2 h, finetuning on KITTI costs 2.6 h.
 
+## 🏆 KITTI 2012 benchmark
+**[Context-Stereo](https://www.cvlibs.net/datasets/kitti/eval_stereo_flow_detail.php?benchmark=stereo&error=3&eval=all&result=5e3ff6f4936e065626cf8ebb657bd89f9d1c98d0)** Rank #113.
 
 ## 🏆 KITTI 2015 benchmark
 
