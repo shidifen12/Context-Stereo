@@ -55,9 +55,6 @@ Timing tests are using the code in **speed.py**, CUDA synchronization included.
 |Disparity Regression|3| 
 |Full Module|30| 
 
-## 🥇 Table 3. Comparison of real-time methods on KITTI benchmarks.
-
-![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/t3.png)
 
 ## 🌍 Comparisons with real time methods on real-world data 
 
@@ -68,6 +65,10 @@ The generalization performance of Context-Stereo is evaluated using home-made re
 The binocular camera is calibrated using OpenCV library and its output image pairs are corrected by the distortion parameters obtained from the calibration and the camera’s parameters. 
 
 Four typical SOTA real-time methods, CoEx, Fast-ACVNet, CGI-Stereo, IINet are compared with Context-Stereo in the above qualitative results.
+
+## 🥇 Table 3. Comparison of real-time methods on KITTI benchmarks.
+
+![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/t3.png)
 
 ## 🛠️ Environment Dependencies
 
