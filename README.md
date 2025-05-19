@@ -72,7 +72,7 @@ Four typical SOTA real-time methods, CoEx, Fast-ACVNet, CGI-Stereo, IINet are co
 
 ![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/t3.png)
 
-## 🛠️ Environment constrution
+## 🛠️ Environment construction
 
 * Create a basic environment and activate it:
 ```Shell
