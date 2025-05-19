@@ -17,7 +17,7 @@ Pretraining on Scene Flow costs 11.2 h, finetuning on KITTI costs 2.6 h.
 
 **[Context-Stereo](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19fafc7a0b041ccf935def0c20161f5446976e5f)** Rank #156.
 
-**[Context-Stereo-I](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=fab7f4d69d910af26490342a1aa093a33d4a014c)** Rank #107, the Iterative version of Context-Stereo.
+**[Context-Stereo-I](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=fab7f4d69d910af26490342a1aa093a33d4a014c)** Rank #107, the **i**terative version of Context-Stereo.
 
 ## 📊 Table 1. Performance of ECF and AGS in existing methods on Scene Flow, KITTI 2015 benchmark, Middlebury and ETH3D.
 
@@ -72,9 +72,14 @@ Four typical SOTA real-time methods, CoEx, Fast-ACVNet, CGI-Stereo, IINet are co
 
 ![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/t3.png)
 
-## 🛠️ Environment Dependencies
+## 🛠️ Environment constrution
 
-Ensure the following dependencies are installed:
+* Create a basic environment and activate it:
+```Shell
+conda create -n context python=3.8
+conda activate context
+```
+* Ensure the following dependencies are installed:
 
 ```bash
 pip install torch==2.0.0+cu118 torchvision==0.8.2+cu110 torchaudio==2.0.0 --index-url https://download.pytorch.org/whl/cu118
