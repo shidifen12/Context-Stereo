@@ -17,7 +17,7 @@ Pretraining on Scene Flow costs 11.2 h, finetuning on KITTI costs 2.6 h.
 
 **[Context-Stereo](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19fafc7a0b041ccf935def0c20161f5446976e5f)** Rank #156.
 
-**[Context-Stereo-I](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=fab7f4d69d910af26490342a1aa093a33d4a014c)** Rank #107, the **i**terative version of Context-Stereo.
+**[Context-Stereo-I](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=fab7f4d69d910af26490342a1aa093a33d4a014c)** Rank #107, the **i**terative version of Context-Stereo. Details of the iterative model will be released shortly in our following publication.
 
 ## 📊 Table 1. Performance of ECF and AGS in existing methods on Scene Flow, KITTI 2015 benchmark, Middlebury and ETH3D.
 
