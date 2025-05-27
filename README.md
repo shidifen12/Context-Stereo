@@ -46,16 +46,17 @@ Timing tests are using the code in **speed.py**, CUDA synchronization included.
 
 ## 📈 Table 2. Computational time analysis of each module in Context-Stereo.
 
-|Module|  Time (ms)         |
-|----------------|----------|
-|Feature Extraction     |10|  
-|Cost Volume Construction|7|       
-|Cost Aggregation (None)|4| 
-|Cost Aggregation (ECF)|7| 
-|Cost Aggregation (AGS)|7| 
-|Cost Aggregation (ECF&AGS)|10| 
-|Disparity Regression|3| 
-|Full Module|30| 
+| Module                     | Time (ms) |
+|----------------------------|-----------|
+| Feature Extraction          | 10        |
+| Cost Volume Construction    | 7         |
+| Cost Aggregation            |           |
+| ├─ None                     | 4         |
+| ├─ ECF                      | 7         |
+| ├─ AGS                      | 7         |
+| └─ ECF&AGS                  | 10        |
+| Disparity Regression        | 3         |
+| Full Module                 | 30        |
 
 
 ## 🌍 Comparisons with real time methods on real-world data 
