@@ -160,11 +160,6 @@ The KITTI dataset used in this project is a mix of **KITTI 2012** and **KITTI 20
 
 
 
-## 🎯 Weights 
-
-
-* [Scene Flow](https://huggingface.co/shidifen12/Context-Stereo/tree/main/)
-* [KITTI](https://huggingface.co/shidifen12/Context-Stereo/tree/main/)
 
 
 
