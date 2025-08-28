@@ -11,10 +11,12 @@ All experiments in the paper including comparisons, ablation experiments in Tabl
 Pretraining on Scene Flow costs 11.2 h, finetuning on KITTI costs 2.6 h.
 
 ## 🏆 KITTI 2012 benchmark
+**[Context-Stereo-I](https://www.cvlibs.net/datasets/kitti/eval_stereo_flow_detail.php?benchmark=stereo&error=3&eval=all&result=29ba705148fd0bccf2f183180f2ca3d543778392)** Rank #93,
+
 **[Context-Stereo](https://www.cvlibs.net/datasets/kitti/eval_stereo_flow_detail.php?benchmark=stereo&error=3&eval=all&result=5e3ff6f4936e065626cf8ebb657bd89f9d1c98d0)** Rank #113.
 
 ## 🏆 KITTI 2015 benchmark
-**[Context-Stereo-I](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=633a7405b3b2329c494f33ab9c2a954f801ddada)** Rank #95, the **i**terative version of Context-Stereo. Details of the iterative model will be released shortly in our following publication.
+**[Context-Stereo-I](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=633a7405b3b2329c494f33ab9c2a954f801ddada)** Rank #95
 
 **[Context-Stereo](https://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19fafc7a0b041ccf935def0c20161f5446976e5f)** Rank #155.
 
@@ -25,17 +27,13 @@ Pretraining on Scene Flow costs 11.2 h, finetuning on KITTI costs 2.6 h.
 
 | Method | Cost Volume | Cost Aggregation | Hourglass Number | Contextual Aggregation | Scene EPE (px) | KT 15 D1-all (%) | MID (Zero-shot) | ETH3D (Zero-shot) | Time (ms) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Fast-ACV Variants** | | | | | | | | | |
 | Fast-ACV-base0 | ACV | hourglass-att | 2 | | 0.64 | 2.17 | 20.3 | 10.1 | 39 |
 | Fast-ACV-base-1 | ACV | hourglass | 2 | | 0.71 | 4.61 | 30.7 | 12.1 | 32 |
 | **Fast-ACV-E&A** | **Corr8** | **hourglass-E&A** | **1** | **✓** | **0.60** | **2.05** | **12.7** | **8.1** | **30** |
-| **GwcNet Variants** | | | | | | | | | |
 | GwcNet-base | Gwc8 | hourglass | 1 | | 0.67 | 2.20 | 26.2 | 13.3 | **23** |
 | **GwcNet-E&A** | **Gwc8** | **hourglass-E&A** | **1** | **✓** | **0.57** | **1.95** | **17.8** | **9.2** | 29 |
-| **CoEx Variants** | | | | | | | | | |
 | CoEx-base | Corr8 | hourglass-GCE | 1 | | 0.69 | 2.01 | 14.5 | 9.0 | **23** |
 | **CoEx-E&A** | **Corr8** | **hourglass-E&A** | **1** | **✓** | **0.60** | **1.93** | **12.5** | **7.1** | 28 |
-| **CGI-Stereo Variants** | | | | | | | | | |
 | CGI-Stereo-base | AFV | hourglass-CGF | 1 | | 0.64 | 1.94 | 13.5 | 6.3 | **28** |
 | **CGI-Stereo-E&A** | **AFV** | **hourglass-E&A** | **1** | **✓** | **0.58** | **1.90** | **10.5** | **5.9** | 30 |
 
@@ -77,7 +75,24 @@ Four typical SOTA real-time methods, CoEx, Fast-ACVNet, CGI-Stereo, IINet and RT
 
 ## 🥇 Table 3. Comparison of real-time methods on KITTI benchmarks.
 
-![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/t3.png)
+| Model | KITTI 2012 | | KITTI 2015 | | | | Platform | Runtime (ms) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: | :---: |
+| | **3px-noc (%)** | **3px-all (%)** | **D1-bg (%)** | **D1-fg (%)** | **D1-all (%)** | | | |
+| StereoNet [7] | 4.91 | 6.02 | 4.30 | 7.45 | 4.83 | | Titan X | 15 |
+| DeepPruner [15] | - | - | 2.32 | 3.91 | 2.59 | | RTX 3080 | 50* |
+| RTSNet [9] | 2.43 | 2.90 | 2.86 | 6.19 | 3.41 | | Tesla P100 | 20 |
+| BGNet [13] | 1.77 | 2.15 | 2.07 | 4.74 | 2.51 | | RTX 3080 | 26* |
+| Fast-ACVNet [8] | 1.68 | 2.13 | 1.82 | 3.93 | 2.17 | | RTX 3090 | 39 |
+| Fast-ACVNet+ [8] | 1.45 | 1.85 | 1.70 | 3.53 | 2.01 | | RTX 3090 | 45 |
+| CoEx [16] | 1.55 | 1.93 | 1.79 | 3.82 | 2.13 | | RTX 3080 | 23* |
+| Ghost-Stereo [14] | 1.45 | 1.80 | 1.71 | 3.77 | 2.05 | | RTX 3090 | 37 |
+| IINet [25] | 1.81 | 2.21 | 2.02 | 3.39 | 2.25 | | RTX 3090 | 26 |
+| HITNet [30] | 1.41 | 1.89 | 1.74 | 3.20 | 1.98 | | Titan V | 20 |
+| CGI-Stereo [18] | 1.41 | 1.76 | 1.66 | 3.38 | 1.94 | | RTX 3080 | 28* |
+| Light-Stereo-L [20] | 1.55 | 1.87 | 1.78 | **2.64** | 1.93 | | RTX 3080 | 45* |
+| RT-IGEV++ [42] | 1.29 | 1.68 | 1.48 | 3.37 | 1.79 | | RTX 3080 | 48* |
+| **Context-Stereo (Ours)** | 1.39 | 1.75 | 1.66 | 3.07 | 1.89 | | RTX 3080 | 30 |
+| **Context-Stereo-I (Ours)** | **1.26** | **1.66** | **1.47** | 3.05 | **1.73** | | RTX 3080 | 41 |
 
 ## 🛠️ Environment construction
 
