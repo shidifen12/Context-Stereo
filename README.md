@@ -75,24 +75,25 @@ Four typical SOTA real-time methods, CoEx, Fast-ACVNet, CGI-Stereo, IINet and RT
 
 ## 🥇 Table 3. Comparison of real-time methods on KITTI benchmarks.
 
-| Model | KITTI 2012 | | KITTI 2015 | |  | Platform | Runtime (ms) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: | :---: |
-| | **3px-noc (%)** | **3px-all (%)** | **D1-bg (%)** | **D1-fg (%)** | **D1-all (%)** |  | |
-| StereoNet [7] | 4.91 | 6.02 | 4.30 | 7.45 | 4.83 |  Titan X | 15 |
-| DeepPruner [15] | - | - | 2.32 | 3.91 | 2.59 |  RTX 3080 | 50* |
-| RTSNet [9] | 2.43 | 2.90 | 2.86 | 6.19 | 3.41 |  Tesla P100 | 20 |
-| BGNet [13] | 1.77 | 2.15 | 2.07 | 4.74 | 2.51 |  RTX 3080 | 26* |
-| Fast-ACVNet [8] | 1.68 | 2.13 | 1.82 | 3.93 | 2.17 |  RTX 3090 | 39 |
-| Fast-ACVNet+ [8] | 1.45 | 1.85 | 1.70 | 3.53 | 2.01 |  RTX 3090 | 45 |
-| CoEx [16] | 1.55 | 1.93 | 1.79 | 3.82 | 2.13 |  RTX 3080 | 23* |
-| Ghost-Stereo [14] | 1.45 | 1.80 | 1.71 | 3.77 | 2.05 |  RTX 3090 | 37 |
-| IINet [25] | 1.81 | 2.21 | 2.02 | 3.39 | 2.25 |  RTX 3090 | 26 |
-| HITNet [30] | 1.41 | 1.89 | 1.74 | 3.20 | 1.98 |  Titan V | 20 |
-| CGI-Stereo [18] | 1.41 | 1.76 | 1.66 | 3.38 | 1.94 |  RTX 3080 | 28* |
-| Light-Stereo-L [20] | 1.55 | 1.87 | 1.78 | **2.64** | 1.93 |  RTX 3080 | 45* |
-| RT-IGEV++ [42] | 1.29 | 1.68 | 1.48 | 3.37 | 1.79 |  RTX 3080 | 48* |
-| **Context-Stereo (Ours)** | 1.39 | 1.75 | 1.66 | 3.07 | 1.89 |  RTX 3080 | 30 |
-| **Context-Stereo-I (Ours)** | **1.26** | **1.66** | **1.47** | 3.05 | **1.73** |  RTX 3080 | 41 |
+| Model | KITTI 2012 3px-noc (%) | KITTI 2012 3px-all (%) | KITTI 2015 D1-bg (%) | KITTI 2015 D1-fg (%) | KITTI 2015 D1-all (%) | Platform | Runtime (ms) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| StereoNet [7] | 4.91 | 6.02 | 4.30 | 7.45 | 4.83 | Titan X | 15 |
+| DeepPruner [15] | - | - | 2.32 | 3.91 | 2.59 | RTX 3080 | 50* |
+| RTSNet [9] | 2.43 | 2.90 | 2.86 | 6.19 | 3.41 | Tesla P100 | 20 |
+| BGNet [13] | 1.77 | 2.15 | 2.07 | 4.74 | 2.51 | RTX 3080 | 26* |
+| Fast-ACVNet [8] | 1.68 | 2.13 | 1.82 | 3.93 | 2.17 | RTX 3090 | 39 |
+| Fast-ACVNet+ [8] | 1.45 | 1.85 | 1.70 | 3.53 | 2.01 | RTX 3090 | 45 |
+| CoEx [16] | 1.55 | 1.93 | 1.79 | 3.82 | 2.13 | RTX 3080 | 23* |
+| Ghost-Stereo [14] | 1.45 | 1.80 | 1.71 | 3.77 | 2.05 | RTX 3090 | 37 |
+| IINet [25] | 1.81 | 2.21 | 2.02 | 3.39 | 2.25 | RTX 3090 | 26 |
+| HITNet [30] | 1.41 | 1.89 | 1.74 | 3.20 | 1.98 | Titan V | 20 |
+| CGI-Stereo [18] | 1.41 | 1.76 | 1.66 | 3.38 | 1.94 | RTX 3080 | 28* |
+| Light-Stereo-L [20] | 1.55 | 1.87 | 1.78 | **2.64** | 1.93 | RTX 3080 | 45* |
+| RT-IGEV++ [42] | 1.29 | 1.68 | 1.48 | 3.37 | 1.79 | RTX 3080 | 48* |
+| **Context-Stereo (Ours)** | 1.39 | 1.75 | 1.66 | 3.07 | 1.89 | RTX 3080 | 30 |
+| **Context-Stereo-I (Ours)** | **1.26** | **1.66** | **1.47** | 3.05 | **1.73** | RTX 3080 | 41 |
+
+*Speed Were Tested Using Open-Source Code Released by the Authors of Refs. \textbf{Bold}: Best.
 
 ## 🛠️ Environment construction
 
