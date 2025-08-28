@@ -77,7 +77,7 @@ Four typical SOTA real-time methods, CoEx, Fast-ACVNet, CGI-Stereo, IINet and RT
 
 | Model | KITTI 2012 3px-noc (%) | KITTI 2012 3px-all (%) | KITTI 2015 D1-bg (%) | KITTI 2015 D1-fg (%) | KITTI 2015 D1-all (%) | Platform | Runtime (ms) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| StereoNet [7] | 4.91 | 6.02 | 4.30 | 7.45 | 4.83 | Titan X | 15 |
+| StereoNet [7] | 4.91 | 6.02 | 4.30 | 7.45 | 4.83 | Titan X | **15** |
 | DeepPruner [15] | - | - | 2.32 | 3.91 | 2.59 | RTX 3080 | 50* |
 | RTSNet [9] | 2.43 | 2.90 | 2.86 | 6.19 | 3.41 | Tesla P100 | 20 |
 | BGNet [13] | 1.77 | 2.15 | 2.07 | 4.74 | 2.51 | RTX 3080 | 26* |
