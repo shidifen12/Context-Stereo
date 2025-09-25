@@ -1,5 +1,5 @@
 #  Robust Real-Time Stereo Matching via Context Encoded Iterative Refinement
-![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/img/f5.jpg)
+![imgs](https://github.com/shidifen12/Context-Stereo/blob/main/Context-Stereo/img/f5.jpg)
 
 
 ## 🌟 Environment
